@@ -287,6 +287,40 @@ return [
                     'url'  => '/fichaVacunacion',
                     'icon'  => 'fas fa-folder',
                 ],
+                [
+                    'text' => 'Ficha Reproduccion',
+                    'url'  => '/fichaVacunacion',
+                    'icon'  => 'fas fa-venus',
+                ],
+
+            ],
+        ],
+
+        [
+            'text'    => 'Control',
+            'icon'    => 'fas fa-ad',
+            'submenu' => [
+                [
+                    'text' => 'Control Vacunas',
+                    'url'  => '/confVacuna',
+                    'icon'  => 'fas fa-syringe',
+                ],
+                [
+                    'text' => 'Control Peso ',
+                    'url'  => '/confUbicacion',
+                    'icon'  => 'fas fa-weight',
+                ],
+                [
+                    'text' => 'Control Desparacitacion ',
+                    'url'  => '/confUbicacion',
+                    'icon'  => 'fas fa-vials',
+                ],
+                [
+                    'text' => 'Control Preñes ',
+                    'url'  => '/confUbicacion',
+                    'icon'  => 'fas fa-file-medical',
+                ],
+
 
             ],
         ],
@@ -299,13 +333,18 @@ return [
             'submenu' => [
                 [
                     'text' => 'Vacunas',
+                    'text' => 'Nombres de Vacunas',
                     'url'  => '/confVacuna',
                     'icon'  => 'fas fa-syringe',
                 ],
                 [
+                    'text' => 'Nombres de Desparacitantes',
+                    'url'  => '/confVacuna',
+                    'icon'  => 'fas fa-vial',
+                ],
+                [
                     'text' => 'Ubicacion Interna ',
                     'url'  => '/confUbicacion',
-                    'icon'  => 'fas fa-map-marker-alt',
                 ],
 
             ],
