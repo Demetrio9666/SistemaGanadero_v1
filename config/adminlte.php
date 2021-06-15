@@ -283,7 +283,7 @@ return [
                     'icon'  => 'fas fa-ambulance',
                 ],
                 [
-                    'text' => 'Ficha Vacunacion',
+                    'text' => 'Ficha Tratamiento',
                     'url'  => '/fichaVacunacion',
                     'icon'  => 'fas fa-folder',
                 ],

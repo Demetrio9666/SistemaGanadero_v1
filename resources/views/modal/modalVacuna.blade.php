@@ -17,8 +17,8 @@
                     </div>
                  
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Descripcion</label>
-                      <input type="text" class="form-control" id="inputPassword4">
+                      <label for="inputPassword4" class="form-label">Fecha Elaboracion</label>
+                      <input type="date" class="form-control" id="inputPassword4">
                   </div>
             
                   <div class="col-md-6">    

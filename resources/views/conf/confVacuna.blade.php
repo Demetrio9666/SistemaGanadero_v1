@@ -31,19 +31,25 @@
             <thead>
                 <tr>
                     <th>Nombre Vacuna</th>
-                    <th>Descripcion</th>
+                    <th>Fecha Elaboracion</th>
+                    <th>Fecha Caducidad </th>
+                    <th>Proveedor</th>
                 </tr>
             </thead>
             <tbody>            
                 <tr>
+                    <td>Donna Snider</td>
+                    <td>Customer Support</td>
                     <td>Donna Snider</td>
                     <td>Customer Support</td>        
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                  <th>Nombre Vacuna</th>
-                  <th>Descripcion</th>
+                    <th>Nombre Vacuna</th>
+                    <th>Fecha Elaboracion</th>
+                    <th>Fecha Caducidad </th>
+                    <th>Proveedor</th>
                 </tr>
             </tfoot>
         </table>
