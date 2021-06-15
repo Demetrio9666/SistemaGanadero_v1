@@ -12,22 +12,18 @@
             <div class="modal-body" style="width:100%">
                 <form  class="row g-3">
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Nombre de Vacuna</label>
+                      <label for="inputPassword4" class="form-label">Codigo Animal</label>
                       <input type="text" class="form-control" id="inputPassword4">
                     </div>
                  
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Fecha Elaboracion</label>
+                      <label for="inputPassword4" class="form-label">Fecha Registro</label>
                       <input type="date" class="form-control" id="inputPassword4">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Fecha Caducidad</label>
-                    <input type="date" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Nombre del Proveedor</label>
-                  <input type="text" class="form-control" id="inputPassword4">
-                </div>
+                   </div>
+                    <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Nombre del Proveedor</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                    </div>
             
                   <div class="col-md-6">    
                   </div>

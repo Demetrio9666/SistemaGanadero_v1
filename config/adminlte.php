@@ -302,22 +302,22 @@ return [
             'submenu' => [
                 [
                     'text' => 'Control Vacunas',
-                    'url'  => '/confVacuna',
+                    'url'  => '/controlVacuna',
                     'icon'  => 'fas fa-syringe',
                 ],
                 [
                     'text' => 'Control Peso ',
-                    'url'  => '/confUbicacion',
+                    'url'  => '/controlPeso',
                     'icon'  => 'fas fa-weight',
                 ],
                 [
                     'text' => 'Control Desparacitacion ',
-                    'url'  => '/confUbicacion',
+                    'url'  => '/controlDesparasitacion',
                     'icon'  => 'fas fa-vials',
                 ],
                 [
                     'text' => 'Control Preñes ',
-                    'url'  => '/confUbicacion',
+                    'url'  => '/controlPrenes',
                     'icon'  => 'fas fa-file-medical',
                 ],
 
@@ -333,18 +333,18 @@ return [
             'submenu' => [
                 [
                     'text' => 'Vacunas',
-                    'text' => 'Nombres de Vacunas',
                     'url'  => '/confVacuna',
                     'icon'  => 'fas fa-syringe',
                 ],
                 [
-                    'text' => 'Nombres de Desparacitantes',
-                    'url'  => '/confVacuna',
+                    'text' => 'Desparacitantes',
+                    'url'  => '/confDesparasitante',
                     'icon'  => 'fas fa-vial',
                 ],
                 [
                     'text' => 'Ubicacion Interna ',
                     'url'  => '/confUbicacion',
+                    'icon' =>'fas fa-map',
                 ],
 
             ],
