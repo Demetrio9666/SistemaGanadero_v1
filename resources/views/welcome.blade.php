@@ -43,7 +43,7 @@
                     </div>
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                       Desarrollador: Demetrio Gonzalez
+                       Desarrollador y Analista: Demetrio Gonzalez
                     </div>
                 </div>
             </div>
