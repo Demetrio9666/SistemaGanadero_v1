@@ -284,12 +284,12 @@ return [
                 ],
                 [
                     'text' => 'Ficha Tratamiento',
-                    'url'  => '/fichaVacunacion',
+                    'url'  => '/fichaTratamiento',
                     'icon'  => 'fas fa-folder',
                 ],
                 [
                     'text' => 'Ficha Reproduccion',
-                    'url'  => '/fichaVacunacion',
+                    'url'  => '/fichaReproduccion',
                     'icon'  => 'fas fa-venus',
                 ],
 

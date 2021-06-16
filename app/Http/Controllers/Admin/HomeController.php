@@ -90,7 +90,7 @@ class HomeController extends Controller
     }
 
 
-    public function Registro_Vacunacion(){
+    public function Registro_Tratamiento(){
         $animales = DB::table('file_animale')
         ->select(    'animalCode',
                      'fecha_nacimiento',
@@ -98,25 +98,39 @@ class HomeController extends Controller
                      'sex'
                   )
         ->get();
-        return view('registro.fichaVacunacion',compact('animales'));
+        return view('registro.fichaTratamiento',compact('animales'));
     }
+
+    public function Registro_Reproduccion(){
+        return view('registro.fichaReproduccion');
+    }
+
+
     
-    public function Data_FichaAnimal(){
-        return view('datas.dataFichaanimal');
+    public function Control_Despara(){
+        return view('controles.controlDesparasitacion');
     }
-    public function Data_FichaParto(){
-        return view('datas.dataFichaparto');
+    public function Control_Peso(){
+        return view('controles.controlPeso');
     }
-    public function Data_FichaVacunacion(){
-        return view('datas.dataFichavacunacion');
+    public function Control_Prenes(){
+        return view('controles.controlPrenes');
     }
+    public function Control_Vacuna(){
+        return view('controles.controlVacuna');
+    }
+
+
+
 
     public function Conf_Vacuna(){
         return view('conf.confVacuna');
     }
-
     public function Conf_Ubicacion(){
         return view('conf.confUbicacion');
+    }
+    public function Conf_Desparacitante(){
+        return view('conf.confDesparasitante');
     }
 
 }
