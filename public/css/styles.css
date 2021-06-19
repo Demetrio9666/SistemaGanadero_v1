@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://getwallpapers.com/wallpaper/full/4/c/4/969129-amazing-cow-wallpaper-1920x1200-1080p.jpg');
+background-image: url('https://getwallpapers.com/wallpaper/full/8/8/6/1018636-widescreen-cow-backgrounds-2048x1365-for-4k.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -24,7 +24,7 @@ background-color: rgba(0,0,0,0.5) !important;
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
-color: #FFC312;
+color: #121520;
 }
 
 .social_icon span:hover{
@@ -44,7 +44,7 @@ top: -45px;
 
 .input-group-prepend span{
 width: 50px;
-background-color: #FFC312;
+background-color: #0b56d8;
 color: black;
 border:0 !important;
 }
