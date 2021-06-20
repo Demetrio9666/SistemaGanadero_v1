@@ -132,5 +132,14 @@ class HomeController extends Controller
     public function Conf_Desparacitante(){
         return view('conf.confDesparasitante');
     }
+    public function Conf_Pajuela(){
+        return view('conf.confPajuela');
+    }
+    public function Conf_Antibiotico(){
+        return view('conf.confAntibiotico');
+    }
+    public function Conf_Vitamina(){
+        return view('conf.confVitamina');
+    }
 
 }

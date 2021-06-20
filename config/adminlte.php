@@ -350,13 +350,13 @@ return [
                         ],
                         [
                             'text' =>'Vitaminas',
-                            'url' =>'/#',
+                            'url' =>'/confVi',
                             'icon'=>'fas fa-pills',
                         ],
 
                         [
                             'text'=> 'Antibióticos',
-                            'url' => '/',
+                            'url' => '/confAnt',
                             'icon' => 'fas fa-shield-virus',
                         ],
 
@@ -368,7 +368,7 @@ return [
 
                 [
                     'text' => 'Ingreso de Pajuela ',
-                    'url'  => '/.',
+                    'url'  => '/confPa',
                     'icon' =>'fas fa-vial',
                 ],
 

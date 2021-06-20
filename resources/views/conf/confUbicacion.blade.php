@@ -17,31 +17,13 @@
   @endsection
 
   @section('content_header')
-  <form  class="row g-3">
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Ubicacion</label>
-        <input type="text" class="form-control" id="inputPassword4">
-      </div>
-   
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Descripcion</label>
-        <input type="text" class="form-control" id="inputPassword4">
-    </div>
-
-    <div class="col-md-6">    
-    </div>
-    
-    <div class="col-12"></div>
-    <div class="d-grid gap-2 col-1 mx-auto">
-      <button class="btn btn-primary" type="submit">Registrar</button>
-    </div>
-  </form>
+  <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalu">Nuevo</button>
   <div class="card">
       <div class="card-body">
         <table id="ubicacion" class="table table-striped table-bordered" style="width:100%">
           <thead>
               <tr>
-                  <th>Nombre Ubicacion</th>
+                  <th>Nombre de Ubicacion</th>
                   <th>Descripcion</th>
               </tr>
           </thead>
@@ -53,7 +35,7 @@
           </tbody>
           <tfoot>
               <tr>
-                <th>Nombre Ubicacion</th>
+                <th>Nombre de Ubicacion</th>
                 <th>Descripcion</th>
               </tr>
           </tfoot>
@@ -61,6 +43,7 @@
 
       </div>
   </div>
+  @include('modal.modalConfU')
   @endsection
 
 
@@ -74,6 +57,9 @@
      $('#ubicacion').DataTable({
        responsive: true
      });
+     $('#modalu').on('shown.bs.modal', function () {
+       $('#myInput2').trigger('focus')
+       });
   </script>
   @endsection
 </body>

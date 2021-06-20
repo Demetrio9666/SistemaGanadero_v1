@@ -35,6 +35,9 @@ Route::get('/controlVacuna',[HomeController::class,'Control_Vacuna']);
 Route::get('/confVacuna',[HomeController::class,'Conf_Vacuna']);
 Route::get('/confUbicacion',[HomeController::class,'Conf_Ubicacion']);
 Route::get('/confDespa',[HomeController::class,'Conf_Desparacitante']);
+Route::get('/confVi',[HomeController::class,'Conf_Vitamina']);
+Route::get('/confPa',[HomeController::class,'Conf_Pajuela']);
+Route::get('/confAnt',[HomeController::class,'Conf_Antibiotico']);
 
 
 //Route::get('/tabla_',[HomeController::class,'Tabla_Parto_R']);

@@ -15,15 +15,13 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
     @endsection
     @section('content_header')
-    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalvacuna">Nuevo</button>
-    
-
+    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalvitamina">Nuevo</button>
     <div class="card">
         <div class="card-body">
-          <table id="vacunacion" class="table table-striped table-bordered" style="width:100%">
+          <table id="vitamina" class="table table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
-                    <th>Nombre de la Vacuna</th>
+                    <th>Nombre de la Vitamina</th>
                     <th>Fecha Elaboracion</th>
                     <th>Fecha Caducidad </th>
                     <th>Proveedor</th>
@@ -39,7 +37,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Nombre de la Vacuna</th>
+                    <th>Nombre de la Vitamina</th>
                     <th>Fecha Elaboracion</th>
                     <th>Fecha Caducidad </th>
                     <th>Proveedor</th>
@@ -49,7 +47,7 @@
 
         </div>
     </div>
-    @include('modal.modalConfV')
+    @include('modal.modalConfVi')
     @endsection
   
 
@@ -60,10 +58,10 @@
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
     <script>
-       $('#vacunacion').DataTable({
+       $('#vitamina').DataTable({
          responsive: true
        });
-       $('#modalvacuna').on('shown.bs.modal', function () {
+       $('#modalvitamina').on('shown.bs.modal', function () {
        $('#myInput2').trigger('focus')
        });
     </script>
