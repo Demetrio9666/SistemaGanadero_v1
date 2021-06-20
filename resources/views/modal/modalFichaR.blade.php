@@ -12,25 +12,37 @@
             <div class="modal-body" style="width:100%">
                 <form  class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Fecha</label>
+                                    <label for="inputEmail4" class="form-label">Fecha del Registro</label>
                                     <input type="text" class="form-control" id="inputEmail4">
                                 </div>
                         
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Codigo Animal (Madre)</label>
+                                    <label for="inputEmail4" class="form-label">Codigo del Animal (Madre)</label>
                                         <div class="input-group mb-3">
                                             <button class="btn btn-outline-secondary" type="button" id="button-addon1"  data-toggle="modal" data-target="#modalmadreParto" >Buscar</button>
                                             <span class="input-group-text" id="basic-addon1">Madre</span>
                                             <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" name="madre" id="madre" disabled=disabled >
                                         </div>
                                 </div>
+                                <div class="col-md-6" style="display: none;" id="padre">
+                                  <label for="inputEmail4" class="form-label">Codigo del Animal (Padre)</label>
+                                      <div class="input-group mb-3">
+                                          <button class="btn btn-outline-secondary" type="button" id="button-addon1"  data-toggle="modal" data-target="#modalmadreParto" >Buscar</button>
+                                          <span class="input-group-text" id="basic-addon1">Madre</span>
+                                          <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" name="madre" id="madre" disabled=disabled >
+                                      </div>
+                              </div>
+
+                               
+                              </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Tipo de Reproduccion</label>
-                                    <select class="form-control" id="inputPassword4" name="sexo">
-                                            <option selected>...</option>
-                                            <option>Vivo</option>
-                                            <option>Muerto</option>
-                                    </select>
+                                    <select class="form-control" id="inputPassword4" name="estado" onChange="mostrar(this.value)">
+                                      <option selected>...</option>
+                                      <option id="Monta" >Monta</option>
+                                      <option>Insiminacion</option>
+                                      <option>Embrional</option>
+                                </select>
                                 </div>                
                         
                                 <div class="col-12"></div>
@@ -47,8 +59,11 @@
     </div>
 
            @include("modal.modalMadreParto")
-    <script>
-      
+
+           
+   
+   
+<script>
         $('#modalmadreParto').on('shown.bs.modal', function () {
          $('#myInput2').trigger('focus')
         });
@@ -63,6 +78,21 @@
           //alert(renglon);
        });
        </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+function mostrar(id) {
+    if (id == "Monta") {
+        $("#padre").show();
+        
+    }else{
+      $("#padre").hide();
+    }
+ 
+}
+</script>
 
 
 
