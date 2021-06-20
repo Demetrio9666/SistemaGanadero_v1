@@ -94,6 +94,4 @@ function mostrar(id) {
 }
 </script>
 
-
-
   </body>
