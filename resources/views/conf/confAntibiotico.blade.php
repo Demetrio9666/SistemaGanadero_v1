@@ -18,7 +18,7 @@
     <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalantibiotico">Nuevo</button>
     <div class="card">
         <div class="card-body">
-          <table id="antiviotico" class="table table-striped table-bordered" style="width:100%">
+          <table id="antibiotico" class="table table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
                     <th>Nombre de Antibiotico</th>
