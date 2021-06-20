@@ -22,17 +22,18 @@
     
    
     @section('content_header')
-    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalvacuna">Nuevo</button>
+    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalcontrolpre">Nuevo</button>
     
 
     <div class="card">
         <div class="card-body">
-          <table id="prenes" class="table table-striped table-bordered" style="width:100%">
+          <table id="controlpre" class="table table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
-                    <th>Codigo Animal</th>
-                    <th>Fecha</th>
-                    <th>Descripcion</th>
+                    <th>Fecha del Registro</th>
+                    <th>Codigo del Animal</th>
+                    <th>Vitamina Suministrada</th>
+                    <th>Observacion</th>
                     
                 </tr>
             </thead>
@@ -41,21 +42,23 @@
                     <td>Donna Snider</td>
                     <td>Customer Support</td>
                     <td>Donna Snider</td>
+                    <td>-------------</td>
                             
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Codigo Animal</th>
-                    <th>Fecha</th>
-                    <th>Descripcion</th>
+                    <th>Fecha del Registro</th>
+                    <th>Codigo del Animal</th>
+                    <th>Vitamina Suministrada</th>
+                    <th>Observacion</th>
                 </tr>
             </tfoot>
         </table>
 
         </div>
     </div>
-    @include('modal.modalPrenes')
+    @include('modal.modalControlPre')
     @endsection
   
 
@@ -66,10 +69,10 @@
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
     <script>
-       $('#prenes').DataTable({
+       $('#controlpre').DataTable({
          responsive: true
        });
-       $('#modalprenes').on('shown.bs.modal', function () {
+       $('#modalcontrolpre').on('shown.bs.modal', function () {
        $('#myInput2').trigger('focus')
        });
     </script>

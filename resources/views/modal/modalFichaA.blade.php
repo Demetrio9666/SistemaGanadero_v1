@@ -37,7 +37,7 @@
                                   @endforeach 
                             </select>
                             <label for="inputState" class="form-label">Pureza %</label>
-                            <input type="text" class="form-control" id="inputPassword4" name="fecha">
+                               <input type="text" class="form-control" id="inputPassword4" name="fecha">
 
                       </div>
                       <div class="col-md-6">
@@ -49,70 +49,73 @@
                               </select>
                       </div>
                       <div class="col-md-6">
+                        <label for="inputState" class="form-label">Etapa</label>
+                          <select class="form-control" id="inputPassword4" name="sexo">
+                                <option selected>...</option>
+                                <option>Vaca</option>
+                                <option>Toro</option>
+                                <option>Ternero</option>
+                                <option>Vaquilla</option>
+                                <option>Novillo</option>
+                          </select>
+                  </div>
+                      <div class="col-md-6">
                               <label for="inputEmail4" class="form-label">Origen</label>
                               <input type="text" class="form-control" id="inputEmail4" name="origen">
                       </div>
                       <div class="col-md-6">
+                            <label for="inputState" class="form-label">Nombre de la Finca</label>
+                            <input type="text" class="form-control" id="inputPassword4" name="finca">
+                      </div>
+                      <div class="col-md-6">
                               <label for="inputState" class="form-label">Areas</label>
-                              <select class="form-control" id="inputPassword4" name="areas">
-                                      <option selected>...</option>
-                                      @foreach ($Local as $i)
-                                      <option value= "{{$i->id}}" > {{$i->location}}  </option>
-                                      @endforeach 
-                              </select>
+                              <select class="form-control" id="inputPassword4" name="Area">
+                                <option selected>...</option>
+                                  @foreach ($Races as $i)
+                                  <option value= "{{$i->id}}" >{{$i->description}}  </option>
+                                  @endforeach 
+                          </select>
                       </div>
                     <div class="col-md-6">
                             <label for="inputCity" class="form-label">Edad-Meses</label>
                             <input type="number" class="form-control" id="inputCity" name="edad">
                     </div>
                     <div class="col-md-6">
-                          <label for="inputState" class="form-label">Salud</label>
+                          <label for="inputState" class="form-label">Estado de Salud</label>
                           <select class="form-control" id="inputPassword4" name="salud">
-                            <option selected>...</option>
-                              @foreach ($Health as $i)
-                              <option value= "{{$i->id}}" >{{$i->descripcion}}  </option>
-                              @endforeach 
+                              <option selected>...</option>
+                              <option>Sano</option>
+                              <option>Enfermo</option>  
                           </select>
                     </div>
-
                     <div class="col-md-6">
-                          <label for="inputState" class="form-label">Estado Salud</label>
+                        <label for="inputState" class="form-label">Estado de Gestacion</label>
+                        <select class="form-control" id="inputPassword4" name="salud">
+                              <option selected>...</option>
+                              <option>Si</option>
+                              <option>No</option>  
+                        </select>
+                   </div>
+                    <div class="col-md-6">
+                          <label for="inputState" class="form-label">Estado Actual</label>
                           <select class="form-control" id="inputPassword4" name="estado">
-                            <option selected>...</option>
-                              @foreach ($Statu as $i)
-                              <option value= "{{$i->id}}" >{{$i->descripcion}}  </option>
-                              @endforeach 
+                            <option selected>...</option>   
+                            <option>Disponible</option>
+                            <option>Vendido</option>
+                            <option>Faenado</option>
                           </select>
                     </div>
                     <div class="col-md-6">
-                      <label for="inputState" class="form-label">Estado Actual</label>
+                      <label for="inputState" class="form-label">Concedido</label>
                       <select class="form-control" id="inputPassword4" name="estado">
-                        <option selected>...</option>
-                          @foreach ($Statu as $i)
-                          <option value= "{{$i->id}}" >{{$i->descripcion}}  </option>
-                          @endforeach 
+                            <option selected>...</option>
+                            <option>Monta</option>
+                            <option>Insiminacion</option>
+                            <option>Embrional</option>
                       </select>
                 </div>
-                <div class="col-md-6">
-                  <label for="inputState" class="form-label">Ubicacion</label>
-                  <select class="form-control" id="inputPassword4" name="estado">
-                    <option selected>...</option>
-                      @foreach ($Statu as $i)
-                      <option value= "{{$i->id}}" >{{$i->descripcion}}  </option>
-                      @endforeach 
-                  </select>
-            </div>
-            <div class="col-md-6">
-              <label for="inputState" class="form-label">Concedido</label>
-              <select class="form-control" id="inputPassword4" name="estado">
-                <option selected>...</option>
-                  @foreach ($Statu as $i)
-                  <option value= "{{$i->id}}" >{{$i->descripcion}}  </option>
-                  @endforeach 
-              </select>
-        </div>
                 
-                    <div class="col-md-6">
+                    <!--div class="col-md-6">
                           <label for="inputEmail4" class="form-label">Arbol Genealogico</label>
                               <div class="input-group mb-3">
                                       <button class="btn btn-outline-secondary" type="button" id="button-addon1"  data-toggle="modal" data-target="#modalpadre" >Buscar</button>
@@ -121,7 +124,7 @@
                                       <span class="input-group-text" id="basic-addon1">Madre</span>   
                                       <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" name="madre" id="madre" disabled=disabled >
                               </div>
-                    </div> 
+                    </div--> 
                     <div class="col-12"></div>
                           <div class="d-grid gap-2 col-1 mx-auto">
                                 <button class="btn btn-primary" type="submit">Registrar</button>

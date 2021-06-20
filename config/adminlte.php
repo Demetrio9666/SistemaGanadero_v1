@@ -297,7 +297,7 @@ return [
         ],
 
         [
-            'text'    => 'Control',
+            'text'    => 'Controles',
             'icon'    => 'fas fa-ad',
             'submenu' => [
                 [
@@ -331,16 +331,43 @@ return [
             'text'    => 'Configuracion',
             'icon'    => 'fas fa-cog',
             'submenu' => [
+
+
                 [
-                    'text' => 'Vacunas',
-                    'url'  => '/confVacuna',
-                    'icon'  => 'fas fa-syringe',
+                    'text' =>'Medicamentos',
+                    'icon' =>'fas fa-prescription-bottle-alt',
+                    'submenu' =>[
+                        [
+                            'text' => 'Desparacitantes',
+                            'url'  => '/confDespa',
+                            'icon'  => 'fas fa-vial',
+                        ],
+
+                        [
+                            'text' => 'Vacunas',
+                            'url'  => '/confVacuna',
+                            'icon'  => 'fas fa-syringe',
+                        ],
+                        [
+                            'text' =>'Vitaminas',
+                            'url' =>'/#',
+                            'icon'=>'fas fa-pills',
+                        ],
+
+                        [
+                            'text'=> 'Antibióticos',
+                            'url' => '/',
+                            'icon' => 'fas fa-shield-virus',
+                        ],
+
+
+                    ],
                 ],
-                [
-                    'text' => 'Desparacitantes',
-                    'url'  => '/confDesparasitante',
-                    'icon'  => 'fas fa-vial',
-                ],
+
+
+
+
+
                 [
                     'text' => 'Ubicacion Interna ',
                     'url'  => '/confUbicacion',

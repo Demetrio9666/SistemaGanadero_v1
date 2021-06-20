@@ -26,15 +26,16 @@ Route::get('/fichaReproduccion',[HomeController::class,'Registro_Reproduccion'])
 //Route::get('/dataFichavacunacion',[HomeController::class,'Data_FichaVacunacion']);
 
 
-Route::get('/controlDespa',[HomeController::class,'Control_Despara']);
+Route::get('/controlDesparasitacion',[HomeController::class,'Control_Despara']);
 Route::get('/controlPeso',[HomeController::class,'Control_Peso']);
 Route::get('/controlPrenes',[HomeController::class,'Control_Prenes']);
-Route::get('/controlVacunacion',[HomeController::class,'Control_Vacuna']);
+Route::get('/controlVacuna',[HomeController::class,'Control_Vacuna']);
 
 
 Route::get('/confVacuna',[HomeController::class,'Conf_Vacuna']);
-Route::get('/confDespa',[HomeController::class,'Conf_Desparacitante']);
 Route::get('/confUbicacion',[HomeController::class,'Conf_Ubicacion']);
+Route::get('/confDespa',[HomeController::class,'Conf_Desparacitante']);
+
 
 //Route::get('/tabla_',[HomeController::class,'Tabla_Parto_R']);
 
