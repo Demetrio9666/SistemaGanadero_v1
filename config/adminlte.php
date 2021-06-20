@@ -283,7 +283,7 @@ return [
                     'icon'  => 'fas fa-ambulance',
                 ],
                 [
-                    'text' => 'Ficha Tratamiento',
+                    'text' => 'Ficha Tratamiento de Enfermedades',
                     'url'  => '/fichaTratamiento',
                     'icon'  => 'fas fa-folder',
                 ],
@@ -366,7 +366,11 @@ return [
 
 
 
-
+                [
+                    'text' => 'Ingreso de Pajuela ',
+                    'url'  => '/.',
+                    'icon' =>'fas fa-vial',
+                ],
 
                 [
                     'text' => 'Ubicacion Interna ',

@@ -40,7 +40,7 @@
                                     <select class="form-control" id="inputPassword4" name="estado" onChange="mostrar(this.value)">
                                       <option selected>...</option>
                                       <option id="Monta" >Monta</option>
-                                      <option>Insiminacion</option>
+                                      <option id="Insiminacion">Insiminacion Artificial</option>
                                       <option>Embrional</option>
                                 </select>
                                 </div>                
