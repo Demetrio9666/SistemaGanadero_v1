@@ -106,11 +106,11 @@
                           </select>
                     </div>
                     <div class="col-md-6">
-                      <label for="inputState" class="form-label">Concedido</label>
+                      <label for="inputState" class="form-label">Concebido</label>
                       <select class="form-control" id="inputPassword4" name="estado">
                             <option selected>...</option>
                             <option>Monta</option>
-                            <option>Insiminacion</option>
+                            <option>Insiminacion Artificial</option>
                             <option>Embrional</option>
                       </select>
                 </div>
