@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Bovino',
+    'title' => 'SystemBovino',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -283,7 +283,7 @@ return [
                     'icon'  => 'fas fa-ambulance',
                 ],
                 [
-                    'text' => 'Ficha Tratamiento',
+                    'text' => 'Ficha Tratamiento de Enfermedades',
                     'url'  => '/fichaTratamiento',
                     'icon'  => 'fas fa-folder',
                 ],
@@ -367,8 +367,8 @@ return [
 
 
                 [
-                    'text' => 'Material Genetico ',
-                    'url'  => '/confMate',
+                    'text' => 'Ingreso de Pajuela ',
+                    'url'  => '/confPa',
                     'icon' =>'fas fa-vial',
                 ],
 

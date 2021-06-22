@@ -1,5 +1,5 @@
 <body>
-    <div class="modal fade" id="modalmaterial" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalpajuela" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <!--modal-dialog modal-dialog-centered se cambiael tamaño   -->
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -13,26 +13,17 @@
                 <form  class="row g-3">
                     <div class="col-md-6">
                       <label for="inputPassword4" class="form-label">Fecha de Registro</label>
-                      <input type="date" class="form-control" id="inputPassword4">
+                      <input type="text" class="form-control" id="inputPassword4">
                     </div>
                  
                     <div class="col-md-6">
                       <label for="inputPassword4" class="form-label">Raza</label>
                       <input type="date" class="form-control" id="inputPassword4">
                   </div>
-                  <div class="col-md-6">
-                    <label for="inputState" class="form-label">Tipo de Material</label>
-                      <select class="form-control" id="inputPassword4" name="material">
-                            <option selected>...</option>
-                            <option>Pajuela</option>
-                            <option>Embrional</option>
-                      </select>
-                   </div>
-
-                   <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Proveedor</label>
-                    <input type="text" class="form-control" id="inputPassword4">
-                  </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Nombre del Proveedor</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
             
                   <div class="col-md-6">    
                   </div>
