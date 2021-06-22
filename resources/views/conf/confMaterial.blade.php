@@ -15,14 +15,15 @@
     @endsection
   
     @section('content_header')
-    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalpajuela">Nuevo</button>
+    <button type="button" class="btn btn-success" style="margin: 10px" id="button-addon1" data-toggle="modal" data-target="#modalmaterial">Nuevo</button>
     <div class="card">
         <div class="card-body">
-          <table id="pajuela" class="table table-striped table-bordered" style="width:100%">
+          <table id="material" class="table table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
                     <th>Fecha de Registro</th>
                     <th>Raza</th>
+                    <th>Tipo de Material</th>
                     <th>Proveedor</th>
                 </tr>
             </thead>
@@ -30,13 +31,15 @@
                 <tr>
                     <td>Donna Snider</td>
                     <td>Customer Support</td>  
-                    <td>.......</td>      
+                    <td>.......</td>   
+                    <td>.......</td>   
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <th>Fecha de Registro</th>
                     <th>Raza</th>
+                    <th>Tipo de Material</th>
                     <th>Proveedor</th>
                 </tr>
             </tfoot>
@@ -44,7 +47,7 @@
   
         </div>
     </div>
-    @include('modal.modalConfPa')
+    @include('modal.modalConfMa')
     @endsection
   
   
@@ -55,10 +58,10 @@
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
     <script>
-       $('#pajuela').DataTable({
+       $('#material').DataTable({
          responsive: true
        });
-       $('#modalpajuela').on('shown.bs.modal', function () {
+       $('#modalmaterial').on('shown.bs.modal', function () {
          $('#myInput2').trigger('focus')
          });
     </script>

@@ -133,7 +133,7 @@ class HomeController extends Controller
         return view('conf.confDesparasitante');
     }
     public function Conf_Pajuela(){
-        return view('conf.confPajuela');
+        return view('conf.confMaterial');
     }
     public function Conf_Antibiotico(){
         return view('conf.confAntibiotico');
