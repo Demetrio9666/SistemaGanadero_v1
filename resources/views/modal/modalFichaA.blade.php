@@ -15,13 +15,13 @@
                             <label for="inputEmail4" class="form-label">Codigo Animal</label>
                             <input type="number" class="form-control" id="inputEmail4" name="codigo">
                       </div>
-                      <div class="col-md-6">
+                      <!--div class="col-md-6">
                         <img id="img1"  width="370px" height="150px"><br/>
                       </div>
                       <div class="col-md-6">
                         <label for="formFile" class="form-label">Cargar Imagen</label>
                         <input class="form-control" type="file" id="inputFile1">
-                      </div>
+                      </div-->
 
                       <div class="col-md-6">
                             <label for="inputPassword4" class="form-label">Fecha Nacimiento</label>
@@ -63,10 +63,10 @@
                               <label for="inputEmail4" class="form-label">Origen</label>
                               <input type="text" class="form-control" id="inputEmail4" name="origen">
                       </div>
-                      <div class="col-md-6">
+                      <!--div class="col-md-6">
                             <label for="inputState" class="form-label">Nombre de la Finca</label>
                             <input type="text" class="form-control" id="inputPassword4" name="finca">
-                      </div>
+                      </div-->
                       <div class="col-md-6">
                               <label for="inputState" class="form-label">Areas</label>
                               <select class="form-control" id="inputPassword4" name="Area">
