@@ -18,16 +18,12 @@
               </tr>
           </thead>
           <tbody>
-              @foreach ($padre as $i)
-              <tr>
-                  
-                  <td>{{$i->animalCode}}</td>
-                  <td>{{$i->fecha_nacimiento}}</td>
-                  <td>{{$i->age_month}}</td>
-                  <td>{{$i->sex}}</td>
-                  
-              </tr>
-               @endforeach 
+             <tr></tr>
+             <tr></tr>
+             <tr></tr>
+             <tr></tr>
+             <tr></tr>
+             <tr></tr>
           </tbody>
           <tfoot>
               <tr>

@@ -28,17 +28,17 @@
                       </tr>
                   </thead>
                   <tbody>
-                      @foreach ($parto as $i)
+                     
                       <tr>
-                          <th>{{$i->code_partum}}</th>
-                          <td>{{$i->datePartum}}</td>
-                          <td>{{$i->idanimalCode}}</td>
-                          <td>{{$i->male}}</td>
-                          <td>{{$i->female}}</td>
-                          <td>{{$i->dead}}</td>
-                          <td>{{$i->statu_mother}}</td>
+                          <th></th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
                       </tr>
-                      @endforeach
+                      
                   </tbody>
                   <tfoot>
                       <tr>
