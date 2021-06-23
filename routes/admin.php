@@ -20,12 +20,6 @@ Route::get('/fichaTratamiento',[HomeController::class,'Registro_Tratamiento']);
 Route::get('/fichaReproduccion',[HomeController::class,'Registro_Reproduccion']);
 
 
-
-//Route::get('/dataFichaanimal',[HomeController::class,'Data_FichaAnimal']);
-//Route::get('/dataFichaparto',[HomeController::class,'Data_FichaParto']);
-//Route::get('/dataFichavacunacion',[HomeController::class,'Data_FichaVacunacion']);
-
-
 Route::get('/controlDesparasitacion',[HomeController::class,'Control_Despara']);
 Route::get('/controlPeso',[HomeController::class,'Control_Peso']);
 Route::get('/controlPrenes',[HomeController::class,'Control_Prenes']);
@@ -36,7 +30,7 @@ Route::get('/confVacuna',[HomeController::class,'Conf_Vacuna']);
 Route::get('/confUbicacion',[HomeController::class,'Conf_Ubicacion']);
 Route::get('/confDespa',[HomeController::class,'Conf_Desparacitante']);
 Route::get('/confVi',[HomeController::class,'Conf_Vitamina']);
-Route::get('/confPa',[HomeController::class,'Conf_Pajuela']);
+Route::get('/confMate',[HomeController::class,'Conf_Pajuela']);
 Route::get('/confAnt',[HomeController::class,'Conf_Antibiotico']);
 
 

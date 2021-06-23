@@ -22,7 +22,7 @@ use App\Http\Controllers\Admin\HomeController;
 //Route::get('admin',[HomeController::class,'index']);
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
-    return view('admin.index');
+    //return view('admin.index');
 //})->name('index_admin');
 
 

@@ -23,84 +23,17 @@ class HomeController extends Controller
     public function welcome(){
         return view('teams.welcome');
     }
+
+
     public function Registro_Animal(){
-        $Races = race::all();
-        $Type = animal_type::all();
-        $Local = file_area::all();
-        $Health = health_condition::all();
-        $Statu= actual_state::all();
-
-        $mother  = DB::table('file_animale')
-            ->select(    'animalCode',
-                         'fecha_nacimiento',
-                         'age_month',
-                         'sex'
-                      )
-            ->where('sex','Hembra')
-            ->where('age_month','>=',4)            
-            ->get();
-                             
-
-        $padre = DB::table('file_animale')
-                ->select(    'animalCode',
-                            'fecha_nacimiento',
-                            'age_month',
-                            'sex'
-                        )
-                ->where('sex','Macho')        
-                ->where('age_month','>=',8)
-                ->get();
-
-
-
-        return view('registro.fichaAnimal',compact('Races','Type','Local','Health','Statu','padre','mother'));
+        return view('registro.fichaAnimal');
     }
-
-    public function Registro_Parto(){
-
-        $mother  = DB::table('file_animale')
-        ->select(    'animalCode',
-                     'fecha_nacimiento',
-                     'age_month',
-                     'sex'
-                  )
-        ->where('sex','Hembra')
-        ->where('age_month','>=',4)            
-        ->get();
-        $padre = DB::table('file_animale')
-        ->select(    'animalCode',
-                     'fecha_nacimiento',
-                     'age_month',
-                     'sex'
-                  )
-        ->where('sex','Macho')        
-        ->where('age_month','>=',8)
-        ->get();
-
-        $parto =DB::table('file_partum')
-        ->select(    'datePartum',
-                     'idanimalCode',
-                     'male',
-                     'female',
-                     'dead',
-                     'statu_mother'
-        )
-        ->get();
-        return view('registro.fichaParto',compact('padre','mother','parto'));
+    public function Registro_Parto(){ 
+        return view('registro.fichaParto');
     }
-
-
     public function Registro_Tratamiento(){
-        $animales = DB::table('file_animale')
-        ->select(    'animalCode',
-                     'fecha_nacimiento',
-                     'age_month',
-                     'sex'
-                  )
-        ->get();
-        return view('registro.fichaTratamiento',compact('animales'));
+        return view('registro.fichaTratamiento');
     }
-
     public function Registro_Reproduccion(){
         return view('registro.fichaReproduccion');
     }
@@ -133,7 +66,7 @@ class HomeController extends Controller
         return view('conf.confDesparasitante');
     }
     public function Conf_Pajuela(){
-        return view('conf.confPajuela');
+        return view('conf.confMaterial');
     }
     public function Conf_Antibiotico(){
         return view('conf.confAntibiotico');

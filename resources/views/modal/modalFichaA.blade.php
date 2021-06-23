@@ -32,9 +32,9 @@
                             <label for="inputState" class="form-label">Raza</label>
                             <select class="form-control" id="inputPassword4" name="raza">
                                   <option selected>...</option>
-                                  @foreach ($Races as $i)
-                                  <option value= "{{$i->id}}" >{{$i->description}}  </option>
-                                  @endforeach 
+                                 
+                                  <option > </option>
+                                  
                             </select>
                             <label for="inputState" class="form-label">Pureza %</label>
                                <input type="text" class="form-control" id="inputPassword4" name="fecha">
@@ -71,9 +71,9 @@
                               <label for="inputState" class="form-label">Areas</label>
                               <select class="form-control" id="inputPassword4" name="Area">
                                 <option selected>...</option>
-                                  @foreach ($Races as $i)
-                                  <option value= "{{$i->id}}" >{{$i->description}}  </option>
-                                  @endforeach 
+                                  
+                                  <option  >  </option>
+                                  
                           </select>
                       </div>
                     <div class="col-md-6">
