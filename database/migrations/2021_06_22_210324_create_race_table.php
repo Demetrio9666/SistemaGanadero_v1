@@ -15,7 +15,8 @@ class CreateRaceTable extends Migration
     {
         Schema::create('race', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
+            $table->string('description',20);
+            $table->integer('percentage');
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFilePartumTable extends Migration
+class CreateRideATable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateFilePartumTable extends Migration
      */
     public function up()
     {
-        Schema::create('file_partum', function (Blueprint $table) {
+        Schema::create('ride_a', function (Blueprint $table) {
             $table->id();
-            $table->date('datePartum');
-            $table->string('idanimalCode');
-            $table->integer('male');
-            $table->integer('female');
-            $table->integer('dead');
-            $table->string('statu_mother');
+            $table->unsignedBigInteger('race_id');
+            $table->foreign('race_id')->references('id')->on('race');
+            $table->string('hacienda_name',20);
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateFilePartumTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('file_partum');
+        Schema::dropIfExists('ride_a');
     }
 }

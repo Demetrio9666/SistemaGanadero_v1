@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAnimalTypeTable extends Migration
+class CreateLocationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateAnimalTypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('animal_type', function (Blueprint $table) {
+        Schema::create('location', function (Blueprint $table) {
             $table->id();
-            $table->string('descripcion');
+            $table->string('location',20);
+            $table->string('description',20);
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateAnimalTypeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('animal_type');
+        Schema::dropIfExists('location');
     }
 }

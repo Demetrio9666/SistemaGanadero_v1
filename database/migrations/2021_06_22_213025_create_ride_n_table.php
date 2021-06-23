@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFarmFileAreaTable extends Migration
+class CreateRideNTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateFarmFileAreaTable extends Migration
      */
     public function up()
     {
-        Schema::create('farm_file_area', function (Blueprint $table) {
+        Schema::create('ride_n', function (Blueprint $table) {
             $table->id();
-            $table->string('location');
-            $table->string('descripcion');
+            $table-> unsignedBigInteger('animalCode');
+            $table->foreign('animalCode')->references('id')->on('file_animalee');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateFarmFileAreaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('farm_file_area');
+        Schema::dropIfExists('ride_n');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateActualStateTable extends Migration
+class CreateDewormerTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class CreateActualStateTable extends Migration
      */
     public function up()
     {
-        Schema::create('actual_state', function (Blueprint $table) {
+        Schema::create('dewormer', function (Blueprint $table) {
             $table->id();
-            $table->string('descripcion');
+            $table->string('dewormer',20);
+            $table->date('date_e');
+            $table->date('date_c');
+            $table->string('supplier',20);
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ class CreateActualStateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('actual_state');
+        Schema::dropIfExists('dewormer');
     }
 }

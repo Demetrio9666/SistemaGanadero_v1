@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWeigthtControlTable extends Migration
+class CreateVitaminTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateWeigthtControlTable extends Migration
      */
     public function up()
     {
-        Schema::create('weigtht_control', function (Blueprint $table) {
+        Schema::create('vitamin', function (Blueprint $table) {
             $table->id();
-            $table->date('dataControl');
-            $table-> unsignedBigInteger('animalCode_id');
-            $table->foreign('animalCode_id')->references('id')->on('file_animale');
+            $table->string('vitamin',20);
+            $table->date('date_e');
+            $table->date('date_c');
+            $table->string('supplier',20);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateWeigthtControlTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('weigtht_control');
+        Schema::dropIfExists('vitamin');
     }
 }

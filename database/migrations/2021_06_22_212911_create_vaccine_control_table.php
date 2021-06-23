@@ -15,12 +15,12 @@ class CreateVaccineControlTable extends Migration
     {
         Schema::create('vaccine_control', function (Blueprint $table) {
             $table->id();
-            $table->date('date_vaccine');
-            $table-> unsignedBigInteger('animalCode_id');
-            $table->foreign('animalCode_id')->references('id')->on('file_animale');
-            $table-> unsignedBigInteger('idvaccine_id');
-            $table->foreign('idvaccine_id')->references('id')->on('vaccine');
-
+            $table->date('date_v');
+            $table-> unsignedBigInteger('animalCode');
+            $table->foreign('animalCode')->references('id')->on('file_animalee');
+            $table-> unsignedBigInteger('vaccine_id');
+            $table->foreign('vaccine_id')->references('id')->on('vaccine');
+            $table->date('date_vr');
             $table->timestamps();
         });
     }
