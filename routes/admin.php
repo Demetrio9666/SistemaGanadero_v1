@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController;
-
+use App\Http\Controllers\RazaController;
+//use App\Http\Controllers\DatatableController;
 
 //Route::get('/',[HomeController::class,'welcome']);
 
@@ -32,6 +33,14 @@ Route::get('/confDespa',[HomeController::class,'Conf_Desparacitante']);
 Route::get('/confVi',[HomeController::class,'Conf_Vitamina']);
 Route::get('/confMate',[HomeController::class,'Conf_Pajuela']);
 Route::get('/confAnt',[HomeController::class,'Conf_Antibiotico']);
+
+
+
+Route::get('/confRaza',[RazaController::class,'Conf_Raza'])->name('vista');
+Route::get('/confRaza/create',[RazaController::class,'Conf_Raza_create'])->name('formulario');
+Route::post('/confRaza', [RazaController::class,'store'])->name('confRaza.Raza_insert'); 
+
+
 
 
 //Route::get('/tabla_',[HomeController::class,'Tabla_Parto_R']);

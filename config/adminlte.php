@@ -378,6 +378,13 @@ return [
                     'icon' =>'fas fa-map',
                 ],
 
+                
+                [
+                    'text' => 'Razas ',
+                    'url'  => '/confRaza',
+                    'icon' =>'fas fa-file-contract',
+                ],
+
             ],
         ],
 

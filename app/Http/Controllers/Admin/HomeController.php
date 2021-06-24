@@ -3,14 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\actual_state;
-use App\Models\animal_type;
-use App\Models\family_tree;
-use App\Models\file_animale;
-use App\Models\race;
-use App\Models\file_partum;
-use App\Models\file_area;
-use App\Models\health_condition;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -74,5 +66,7 @@ class HomeController extends Controller
     public function Conf_Vitamina(){
         return view('conf.confVitamina');
     }
+ 
+   
 
 }
