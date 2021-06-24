@@ -15,7 +15,7 @@ class RazaController extends Controller
     }
 
     public function Conf_Raza_create(){
-        return view('formularios.Raza');
+        return view('f-raza.Raza');
     }
 
     public function store(Request $request){
@@ -26,6 +26,12 @@ class RazaController extends Controller
        $raza->save(); 
        
        return redirect('/confRaza');
+        
+    }
+
+    public function edit($id){
+        $raza = Race:: find($id);
+
         
     }
   

@@ -31,7 +31,10 @@
                 <tr>
                     <td>{{$i->description}}</td>
                     <td>{{$i->percentage}}</td>
-                    <td></td>  
+                    <td>
+                        <a class="btn btn-primary">Editar</a>
+                        <button class="btn btn-danger">Borrar</button>    
+                    </td>  
                 </tr>
                 @endforeach
             </tbody>
